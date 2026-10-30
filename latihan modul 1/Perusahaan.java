@@ -31,20 +31,21 @@ public class Perusahaan{
     }
     
     private void cetak(String label, String isi){
-        System.out.printf("%-15s:%s%n",label,isi);
+        System.out.printf("%-15s: %s%n",label,isi);
     }
 
     public void hitungSemuaBiaya(){
         double totalSemua = 0;
-        System.out.println("======================================");
+        System.out.println("=======================================");
         System.out.println("LAPORAN REIMBURSEMENT PERJALANAN DINAS");
-        System.out.println("======================================");
+        System.out.println("=======================================");
         for (int i = 0; i < daftarKaryawan.size(); i++){
             Karyawan k = daftarKaryawan.get(i);
             double total = k.hitungTotalBiaya(k.isLuarKota());
             totalSemua += total;
             cetak("Nama Karyawan", k.getNama());
-            cetak("ID", k.getJabatan());
+            cetak("ID", k.getIdKaryawan());
+            cetak("Jabatan", k.getJabatan());
             cetak("Lama Dinas", k.getLamaDinas()+"hari");
             cetak("Tujuan", k.isLuarKota()?"Luar Kota" : "Dalam Kota");
             cetak("Uang Saku", formatRupiah(k.hitungUangSaku()));
@@ -59,7 +60,7 @@ public class Perusahaan{
                 System.out.println("---------------------------------------");
             }
         }
-        System.out.println("======================================");
+        System.out.println("=======================================");
         cetak("TOTAL SELURUHNYA", formatRupiah(totalSemua));
     }
 }
