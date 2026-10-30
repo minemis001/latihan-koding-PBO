@@ -82,4 +82,8 @@ public class Karyawan {
     public String getLabelTransport (){
         return "Biaya Transport";
     }
+
+    public double hitungTotalBiaya (boolean luarKota){
+        hitungUangSaku() + hitungBiayaTransport() + (luarKota ? hitungPenginapan() : 0);
+    }
 }

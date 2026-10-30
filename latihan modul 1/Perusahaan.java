@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Perusahaan extends Karyawan{
+public class Perusahaan{
     private String namaPerusahaan;
     private ArrayList<Karyawan> daftarKaryawan;
 
@@ -25,8 +25,16 @@ public class Perusahaan extends Karyawan{
             if (i > 0 && (digit.length() - i) % 3 == 0){
                 hasil.append('.');
             }
+             hasil.append(digit.charAt(i));
         } 
-        hasil.append(digit.charAt(i));
+        return (bulat < 0 ? "-Rp " : "Rp ") + hasil;
     }
-    return (bulat < 0 ? "-Rp " : "Rp ") + hasil;
+    
+    private void cetak(String label, String isi){
+
+    }
+
+    public void hitungSemuaBiaya(){
+        
+    }
 }
