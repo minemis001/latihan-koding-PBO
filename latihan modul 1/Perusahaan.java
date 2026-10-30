@@ -31,7 +31,7 @@ public class Perusahaan{
     }
     
     private void cetak(String label, String isi){
-        System.out.printf("%-15s: %s%n",label,isi);
+        System.out.printf("%-15s : %s%n",label,isi);
     }
 
     public void hitungSemuaBiaya(){
@@ -46,7 +46,7 @@ public class Perusahaan{
             cetak("Nama Karyawan", k.getNama());
             cetak("ID", k.getIdKaryawan());
             cetak("Jabatan", k.getJabatan());
-            cetak("Lama Dinas", k.getLamaDinas()+"hari");
+            cetak("Lama Dinas", k.getLamaDinas()+" hari");
             cetak("Tujuan", k.isLuarKota()?"Luar Kota" : "Dalam Kota");
             cetak("Uang Saku", formatRupiah(k.hitungUangSaku()));
             if (k.isLuarKota()){
@@ -55,7 +55,7 @@ public class Perusahaan{
                 cetak("Penginapan", "Rp 0 (tidak menginap)");
             }
             cetak(k.getLabelTransport(), formatRupiah(k.hitungBiayaTransport()));
-            cetak("Total Reimbursement", formatRupiah(total));
+            cetak("Total Reimburse", formatRupiah(total));
             if (i<daftarKaryawan.size()-1){
                 System.out.println("---------------------------------------");
             }
