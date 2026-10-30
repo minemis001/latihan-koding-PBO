@@ -84,6 +84,6 @@ public class Karyawan {
     }
 
     public double hitungTotalBiaya (boolean luarKota){
-        hitungUangSaku() + hitungBiayaTransport() + (luarKota ? hitungPenginapan() : 0);
+        return hitungUangSaku() + hitungBiayaTransport() + (luarKota ? hitungPenginapan() : 0);
     }
 }
