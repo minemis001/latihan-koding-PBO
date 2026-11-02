@@ -23,7 +23,7 @@ public class Kendaraan{
         return tahun;
     }
 
-    public void tampilkaInfo(){
+    public void tampilkanInfo(){
         
     }
 }

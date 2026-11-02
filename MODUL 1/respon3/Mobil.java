@@ -16,7 +16,7 @@ public class Mobil extends Kendaraan{
         return jenisTransmisi;
     }
 
-    public void tampilkaInfo(){
+    public void tampilkanInfo(){
         
     }
 }
