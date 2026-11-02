@@ -1,3 +1,5 @@
+package latihan_modul1;
+
 public class Manajer extends Karyawan{
     public Manajer(String nama, String idKaryawan, int lamaDinas, double biayaTransport, boolean luarKota){
         super(nama, idKaryawan, "Manajer", lamaDinas, biayaTransport, luarKota);

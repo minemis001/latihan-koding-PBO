@@ -1,3 +1,5 @@
+package latihan_modul1;
+
 public class Main {
     public static void main(String[] args){
         Perusahaan perusahaan = new Perusahaan("PT Mitra Konsultan Prima");

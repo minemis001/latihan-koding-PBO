@@ -1,3 +1,4 @@
+package latihan_modul1;
 import java.util.ArrayList;
 
 public class Perusahaan{

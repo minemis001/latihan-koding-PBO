@@ -1,3 +1,5 @@
+package latihan_modul1;
+
 public class Direktur extends Karyawan {
     private double biayaSewaMobil;
 

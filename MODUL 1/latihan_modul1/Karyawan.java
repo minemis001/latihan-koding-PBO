@@ -1,3 +1,5 @@
+package latihan_modul1;
+
 public class Karyawan {
     private String nama;
     private String idKaryawan;

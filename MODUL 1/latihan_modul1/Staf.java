@@ -1,3 +1,5 @@
+package latihan_modul1;
+
 public class Staf extends Karyawan {
     public Staf(String nama, String idKaryawan, int lamaDinas, double biayaTransport, boolean luarKota){
         super(nama, idKaryawan, "Staf", lamaDinas, biayaTransport, luarKota);
