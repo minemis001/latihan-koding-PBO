@@ -1,3 +1,5 @@
+package respon;
+
 public class Main {
     public static void main(String[] args){
         Kendaraan k = new Kendaraan("Toyota Avanza", 2024);

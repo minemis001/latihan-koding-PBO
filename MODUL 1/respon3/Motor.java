@@ -1,3 +1,5 @@
+package respon3;
+
 public class Motor extends Kendaraan{
     private String tipeMotor;
     private int kapasitasMesin;

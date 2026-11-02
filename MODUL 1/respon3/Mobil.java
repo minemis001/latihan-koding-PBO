@@ -1,3 +1,5 @@
+package respon3;
+
 public class Mobil extends Kendaraan{
     private int jumlahPintu;
     private String jenisTransmisi;

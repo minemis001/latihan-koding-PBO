@@ -1,3 +1,5 @@
+package respon2;
+
 public class Motor {
     private String jenisMotor;
 

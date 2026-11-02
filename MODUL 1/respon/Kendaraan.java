@@ -1,3 +1,5 @@
+package respon;
+
 public class Kendaraan{
     private String merk;
     private int tahun;

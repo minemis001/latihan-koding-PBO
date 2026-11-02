@@ -1,3 +1,5 @@
+package respon3;
+
 public class Kendaraan{
     private String idKendaraan;
     private String merk;
