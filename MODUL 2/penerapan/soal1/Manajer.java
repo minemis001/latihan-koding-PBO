@@ -5,7 +5,6 @@ public class Manajer extends Pegawai{
     
     Manajer(double gaji, double tunjangan){
         super(gajiPokok);
-        private double gaji = super(gajiPokok);
         this.tunjangan = tunjangan;
     }
 }
