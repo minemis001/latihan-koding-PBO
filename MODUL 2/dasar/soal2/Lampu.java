@@ -8,20 +8,14 @@ public class Lampu implements BisaDinyalakan{
 
     @Override 
     public void nyalakan(){
-        if (status == true){
-            System.out.println("Lampu menyala");
-        }else {
-            System.out.println("Lampu mati");
-        }
+        status = true;
+        System.out.println("Lampu menyala");
     }
 
     @Override 
     public void matikan(){
-        if (status == false){
-            System.out.println("Lampu mati");
-        }else{
-            System.out.println("Lampu menyala");
-        }
+        status = true;
+        System.out.println("Lampu mati");
     }
 
 }
