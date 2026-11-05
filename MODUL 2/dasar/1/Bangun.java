@@ -1,10 +1,7 @@
-package dasar;
+package 1;
 
 public abstract class Bangun{
-    Bangun(){
-        
-    }
-    public abstract hitungLuas();
+    public abstract int hitungLuas();
     public void info(){
         System.out.println("Ini bangun datar");
     }
