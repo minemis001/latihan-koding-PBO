@@ -1,18 +1,18 @@
 package dasar.soal2;
 
 public class Kipas implements BisaDinyalakan{
-    private bool status;
-    Kipas(bool status){
+    private boolean status;
+    Kipas(boolean status){
         this.status = status;
     }
 
     @Override 
-    public bool nyalakan(){
-        return true;
+    public void nyalakan(){
+        
     }
 
     @Override 
-    public bool matikan(){
-        return false;
+    public void matikan(){
+        
     }
 }

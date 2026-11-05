@@ -7,13 +7,13 @@ public class Lampu implements BisaDinyalakan{
     }
 
     @Override 
-    public bool nyalakan(){
-        return true;
+    public void nyalakan(){
+        
     }
 
     @Override 
-    public bool matikan(){
-        return false;
+    public void matikan(){
+
     }
 
 }
