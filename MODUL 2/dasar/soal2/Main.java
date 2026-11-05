@@ -5,7 +5,7 @@ public class Main {
         BisaDinyalakan a = new Lampu(true);
         BisaDinyalakan b = new Kipas(true);
 
-        System.out.println("Hasil = "+ a.nyalakan());
-        System.out.println("Hasil = "+ b.nyalakan());
+        a.nyalakan();
+        b.nyalakan();
     }
 }
