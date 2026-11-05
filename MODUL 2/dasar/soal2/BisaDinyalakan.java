@@ -1,6 +1,6 @@
 package dasar.soal2;
 
 interface BisaDinyalakan {
-    void nyalakan();
-    void matikan();
+    void nyalakan(boolean status);
+    void matikan(boolean status);
 }
