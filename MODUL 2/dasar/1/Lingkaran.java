@@ -1,13 +1,13 @@
-package 1;
+package soal1;
 
 public class Lingkaran extends Bangun{
-    private int jarijari; 
-    Lingkaran(int jarijari){
+    private double jarijari; 
+    Lingkaran(double jarijari){
         this.jarijari = jarijari;
     }
 
     @Override 
-    public int hitungLuas(int jarijari){
-        return (24/7) * jarijari * jarijari;
+    public double hitungLuas(){
+        return Math.PI * jarijari * jarijari;
     }
 }

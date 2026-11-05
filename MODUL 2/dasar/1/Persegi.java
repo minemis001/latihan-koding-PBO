@@ -1,14 +1,14 @@
-package 1;
+package soal1;
 
-public class Persegi Bangun{
-    private int sisi;
+public class Persegi extends Bangun{
+    private double sisi;
     
-    Persegi(int sisi){
+    Persegi(double sisi){
         this.sisi = sisi;
     }
 
     @Override 
-    public int hitungLuas (int sisi) {
+    public double hitungLuas () {
         return sisi * sisi;
     }
 
