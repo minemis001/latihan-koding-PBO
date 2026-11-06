@@ -30,9 +30,9 @@ public class Main{
     }
     
     public static void prosesValuasiPortofolio(Aset[] portofolio) {
-      System.out.println("=======================================");
+      System.out.println("========================================");
       System.out.println("-----MEMPROSES VALUASI PORTOFOLIO");
-      System.out.println("=======================================");
+      System.out.println("========================================");
 
       double totalPortofolio = 0;
 

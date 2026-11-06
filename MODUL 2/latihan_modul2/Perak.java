@@ -41,6 +41,5 @@ public class Perak extends Aset implements Investasi{
         System.out.println("Dividen         : " + hitungDividen());
         System.out.println("Pajak           : " + hitungPajak());
         System.out.println("Biaya Simpan    : " + hitungBiayaPenyimpanan());
-        System.out.println("Total Valuasi Rp: " + hitungNilaiTotal());
     }
 }

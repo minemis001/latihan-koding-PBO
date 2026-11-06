@@ -22,7 +22,7 @@ public abstract class Aset{
         System.out.println("Id Aset         : " + idAset);
         System.out.println("Pemilik         : " + pemilik);
         System.out.println("Harga Pasar     : " + hargaPasar);
-    };
+    }
 
     public abstract double hitungNilaiTotal();
 }
