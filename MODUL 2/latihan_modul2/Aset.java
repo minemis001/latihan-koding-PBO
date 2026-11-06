@@ -5,9 +5,10 @@ public abstract class Aset{
     protected String pemilik;
     protected double jumlah;
     protected double hargaPasar;
-    private static int idCounter;
+    private static int idCounter = 1;
 
     public Aset(String pemilik, double jumlah, double hargaPasar){
+        this.idAset = "AST- " + idCounter++;
         this.pemilik = pemilik;
         this.jumlah = jumlah;
         this.hargaPasar = hargaPasar;
