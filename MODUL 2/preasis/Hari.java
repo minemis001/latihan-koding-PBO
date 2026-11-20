@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class Hari extends JFrame{
     GridLayout layoutAksi;
-    //GridLayout layoutUtama;
+    GridLayout layoutUtama;
     FlowLayout layoutMenu;
     JPanel panelMenu;
     JPanel tombolPanel;
@@ -19,7 +19,7 @@ public class Hari extends JFrame{
     public Hari (){
         layoutAksi = new GridLayout(2,3,8,0);
         layoutMenu = new FlowLayout(FlowLayout.CENTER);
-        //layoutUtama = new GridLayout(1,1);
+        layoutUtama = new GridLayout(1,1);
         panelMenu = new JPanel();
         tombolPanel = new JPanel();
         tombolSimpan = new JButton("Senin");
@@ -30,8 +30,8 @@ public class Hari extends JFrame{
         tombolSabtu = new JButton("Sabtu");
         menuKantin = new JLabel("PILIH HARI");
 
-        // panelMenu.add(menuKantin);
-        tombolPanel.add(menuKantin);
+        panelMenu.add(menuKantin);
+        panelMenu.add(menuKantin);
         tombolPanel.add(tombolSimpan);
         tombolPanel.add(tombolEdit);
         tombolPanel.add(tombolHapus);
@@ -39,7 +39,7 @@ public class Hari extends JFrame{
         tombolPanel.add(tombolJumat);
         tombolPanel.add(tombolSabtu);
 
-        //setLayout(layoutUtama);
+        setLayout(layoutUtama);
         panelMenu.setLayout(layoutMenu);
         tombolPanel.setLayout(layoutAksi);
         add(panelMenu);
