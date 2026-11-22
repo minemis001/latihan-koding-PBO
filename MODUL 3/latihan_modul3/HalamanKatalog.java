@@ -1,10 +1,9 @@
 package latihan_modul3;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
+//import java.awt.event.*;
 
-class HalamanKatalog extends JPanel implements ActionListener{
-    private Main frame;
+class HalamanKatalog extends JPanel{
     private GridLayout layoutUtama;
     private GridLayout layoutAtas;
     private GridLayout layoutKartu;
@@ -26,14 +25,15 @@ class HalamanKatalog extends JPanel implements ActionListener{
     private JLabel namaCompany;
     private JLabel namaEcommerce;
     private JButton tombolPesan;
+    private Main frame;
 
     public HalamanKatalog(Main frame) {
         this.frame = frame;
 
         layoutUtama = new GridLayout(3, 1, 12, 8);
         layoutAtas = new GridLayout(2, 1, 0, 8);
-        layoutKartu = new GridLayout(1, 2, 0, 8);
-        layoutCompany = new GridLayout(2, 1, 8, 0);
+        layoutKartu = new GridLayout(1, 2, 12, 0);
+        layoutCompany = new GridLayout(2, 1, 0, 8);
         layoutEcommerce = new GridLayout(2, 1, 0, 8);
         layoutBawah = new FlowLayout(FlowLayout.CENTER);
         panelAtas = new JPanel();
@@ -41,23 +41,32 @@ class HalamanKatalog extends JPanel implements ActionListener{
         panelBawah = new JPanel();
         kartuCompany = new JPanel();
         kartuEcommerce = new JPanel();
-        labelLogo = new JLabel("Gambar Logo");
-        labelJudul = new JLabel("Katalog Layanan");
-        gambarCompany = new JLabel("Gambar Company");
-        gambarEcommerce = new JLabel("Gambar Ecommerce");
-        namaCompany = new JLabel("Company Profile");
-        namaEcommerce = new JLabel("E-Commerce");
+        ImageIcon iconLogo = new ImageIcon("assets/logo_dne.png");
+        ImageIcon iconCompany = new ImageIcon("assets/company.png");
+        ImageIcon iconEcommerce = new ImageIcon("assets/ecommerce.png");
+        labelLogo = new JLabel(iconLogo);
+        labelJudul = new JLabel("Katalog Layanan", SwingConstants.CENTER, Theme.JUDUL, Theme.HITAM);
+        gambarCompany = new JLabel(iconCompany);
+        gambarEcommerce = new JLabel(iconEcommerce);
+        namaCompany = new JLabel("Company Profile", SwingConstants.CENTER, Theme.JUDUL, Theme.HITAM);
+        namaEcommerce = new JLabel("E-Commerce", SwingConstants.CENTER, Theme.JUDUL, Theme.HITAM);
         tombolPesan = new JButton("Pesan Sekarang");
         
-        ImageIcon logo = new ImageIcon("assets/logo_dne.png");
-        ImageIcon company = new ImageIcon("assets/company.png");
-        ImageIcon ecommerce = new ImageIcon("assets/ecommerce.png");
+        kartuCompany.setLayout(layoutCompany);
+        kartuEcommerce.setLayout(layoutEcommerce);
         kartuCompany.add(gambarCompany);
         kartuCompany.add(namaCompany);
         kartuEcommerce.add(gambarEcommerce);
         kartuEcommerce.add(namaEcommerce);
 
+        setLayout(layoutAtas);
+        setLayout(layoutKartu);
+        setLayout(layoutBawah);
         setLayout(layoutUtama);
         
+        panelAtas.add(labelLogo);
+        panelAtas.add(labelJudul);
+        panelKartu.add();
+        panelBawah.add(tombolPesan);
     }
 }

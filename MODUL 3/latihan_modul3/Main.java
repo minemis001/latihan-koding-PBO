@@ -3,10 +3,10 @@ import java.awt.CardLayout;
 import javax.swing.*;
 
 public class Main extends JFrame{
-    CardLayout cardLayout;
-    JPanel panelUtama;
-    HalamanKatalog halamanKatalog;
-    HalamanPesanan halamanPesanan;
+    private CardLayout cardLayout;
+    private JPanel panelUtama;
+    private HalamanKatalog halamanKatalog;
+    private HalamanPesanan halamanPesanan;
 
     public Main(){
         cardLayout = new CardLayout();
