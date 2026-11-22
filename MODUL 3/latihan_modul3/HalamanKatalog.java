@@ -1,7 +1,6 @@
 package latihan_modul3;
 import javax.swing.*;
 import java.awt.*;
-//import java.awt.event.*;
 
 class HalamanKatalog extends JPanel{
     private GridLayout layoutUtama;
@@ -35,7 +34,7 @@ class HalamanKatalog extends JPanel{
         layoutKartu = new GridLayout(1, 2, 12, 0);
         layoutCompany = new GridLayout(2, 1, 0, 8);
         layoutEcommerce = new GridLayout(2, 1, 0, 8);
-        layoutBawah = new FlowLayout(FlowLayout.CENTER);
+        layoutBawah = new FlowLayout(FlowLayout.CENTER, 12, 8);
         panelAtas = new JPanel();
         panelKartu = new JPanel();
         panelBawah = new JPanel();
