@@ -1,4 +1,4 @@
-package preasis;
+package preasis1;
 import javax.swing.*;
 import java.awt.*;
 
