@@ -41,15 +41,21 @@ class HalamanKatalog extends JPanel{
         panelBawah = new JPanel();
         kartuCompany = new JPanel();
         kartuEcommerce = new JPanel();
-        ImageIcon iconLogo = new ImageIcon("assets/logo_dne.png");
-        ImageIcon iconCompany = new ImageIcon("assets/company.png");
-        ImageIcon iconEcommerce = new ImageIcon("assets/ecommerce.png");
+        iconLogo = new ImageIcon("assets/logo_dne.png");
+        iconCompany = new ImageIcon("assets/company.png");
+        iconEcommerce = new ImageIcon("assets/ecommerce.png");
         labelLogo = new JLabel(iconLogo);
-        labelJudul = new JLabel("Katalog Layanan", SwingConstants.CENTER, Theme.JUDUL, Theme.HITAM);
+        labelJudul = new JLabel("Katalog Layanan", SwingConstants.CENTER);
+        labelJudul.setFont(Theme.JUDUL);
+        labelJudul.setForeground(Theme.HITAM);
         gambarCompany = new JLabel(iconCompany);
         gambarEcommerce = new JLabel(iconEcommerce);
-        namaCompany = new JLabel("Company Profile", SwingConstants.CENTER, Theme.JUDUL, Theme.HITAM);
-        namaEcommerce = new JLabel("E-Commerce", SwingConstants.CENTER, Theme.JUDUL, Theme.HITAM);
+        namaCompany = new JLabel("Company Profile", SwingConstants.CENTER);
+        namaCompany.setFont(Theme.SUBJUDUL);
+        namaCompany.setForeground(Theme.HITAM);
+        namaEcommerce = new JLabel("E-Commerce", SwingConstants.CENTER);
+        namaEcommerce.setFont(Theme.SUBJUDUL);
+        namaEcommerce.setForeground(Theme.HITAM);
         tombolPesan = new JButton("Pesan Sekarang");
         
         kartuCompany.setLayout(layoutCompany);
@@ -59,14 +65,27 @@ class HalamanKatalog extends JPanel{
         kartuEcommerce.add(gambarEcommerce);
         kartuEcommerce.add(namaEcommerce);
 
-        setLayout(layoutAtas);
-        setLayout(layoutKartu);
-        setLayout(layoutBawah);
+        panelAtas.setLayout(layoutAtas);
+        panelKartu.setLayout(layoutKartu);
+        panelBawah.setLayout(layoutBawah);
         setLayout(layoutUtama);
         
         panelAtas.add(labelLogo);
         panelAtas.add(labelJudul);
-        panelKartu.add();
+        panelKartu.add(kartuCompany);
+        panelKartu.add(kartuEcommerce);
         panelBawah.add(tombolPesan);
+
+        kartuCompany.setBorder(BorderFactory.createLineBorder(Theme.BIRU, 1));
+        kartuEcommerce.setBorder(BorderFactory.createLineBorder(Theme.BIRU, 1));
+
+        add(panelAtas);
+        add(panelKartu);
+        add(panelBawah);
+
+        tombolPesan.setFont(Theme.TOMBOL);
+        tombolPesan.setBackground(Theme.BIRU);
+        tombolPesan.setForeground(Theme.PUTIH);
+        tombolPesan.addActionListener(e->frame.bukaPesanan());
     }
 }

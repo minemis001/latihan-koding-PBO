@@ -30,8 +30,9 @@ class HalamanPesanan extends JPanel{
     public HalamanPesanan(Main frame) {
         this.frame = frame;
 
-        add(labelJudul);
-        add(tombolKembali);
+        hargaWebsite = 1049000;
+        hargaHosting = 100000;
+        ImageIcon iconSukses = new ImageIcon("assets/check.png");
     }
 
     public void hitungTotal(){
