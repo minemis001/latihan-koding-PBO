@@ -1,3 +1,4 @@
+package latihan_modul3;
 import java.awt.Color;
 import java.awt.Font;
 
