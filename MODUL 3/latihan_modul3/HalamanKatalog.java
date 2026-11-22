@@ -40,9 +40,9 @@ class HalamanKatalog extends JPanel{
         panelBawah = new JPanel();
         kartuCompany = new JPanel();
         kartuEcommerce = new JPanel();
-        iconLogo = new ImageIcon("assets/logo_dne.png");
-        iconCompany = new ImageIcon("assets/company.png");
-        iconEcommerce = new ImageIcon("assets/ecommerce.png");
+        iconLogo = new ImageIcon("MODUL 3/latihan_modul3/assets/logo_dne.png");
+        iconCompany = new ImageIcon("MODUL 3/latihan_modul3/assets/company.png");
+        iconEcommerce = new ImageIcon("MODUL 3/latihan_modul3/assets/ecommerce.png");
         labelLogo = new JLabel(iconLogo, SwingConstants.CENTER);
         labelJudul = new JLabel("Katalog Layanan", SwingConstants.CENTER);
         labelJudul.setFont(Theme.JUDUL);
