@@ -44,12 +44,12 @@ class HalamanKatalog extends JPanel{
         iconLogo = new ImageIcon("assets/logo_dne.png");
         iconCompany = new ImageIcon("assets/company.png");
         iconEcommerce = new ImageIcon("assets/ecommerce.png");
-        labelLogo = new JLabel(iconLogo);
+        labelLogo = new JLabel(iconLogo, SwingConstants.CENTER);
         labelJudul = new JLabel("Katalog Layanan", SwingConstants.CENTER);
         labelJudul.setFont(Theme.JUDUL);
         labelJudul.setForeground(Theme.HITAM);
-        gambarCompany = new JLabel(iconCompany);
-        gambarEcommerce = new JLabel(iconEcommerce);
+        gambarCompany = new JLabel(iconCompany, SwingConstants.CENTER);
+        gambarEcommerce = new JLabel(iconEcommerce, SwingConstants.CENTER);
         namaCompany = new JLabel("Company Profile", SwingConstants.CENTER);
         namaCompany.setFont(Theme.SUBJUDUL);
         namaCompany.setForeground(Theme.HITAM);
